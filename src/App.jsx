@@ -90,14 +90,14 @@ const App = () => {
       <div className="wrapper">
         <header>
           <img src="./hero.png" alt="Hero Banner" />
-          <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy Without the Hassle</h1>
+          <h1>Encuentra <span className="text-gradient">Peliculas</span> que disfrutaras sin complicaciones</h1>
 
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
 
         {trendingMovies.length > 0 && (
           <section className="trending">
-            <h2>Trending Movies</h2>
+            <h2>Peliculas en tendencia</h2>
 
             <ul>
               {trendingMovies.map((movie, index) => (
@@ -111,7 +111,7 @@ const App = () => {
         )}
 
         <section className="all-movies">
-          <h2>All Movies</h2>
+          <h2>Todas las peliculas</h2>
 
           {isLoading ? (
             <Spinner />
