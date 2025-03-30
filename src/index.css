@@ -9,9 +9,9 @@
   --color-light-100: #cecefb;
   --color-light-200: #a8b5db;
 
-  --color-gray-100: #9ca4ab;
+  --color-gray-100: #ffffff;
 
-  --color-dark-100: #0f0d23;
+  --color-dark-100: #006c89;
 
   --font-dm-sans: DM Sans, sans-serif;
 
@@ -22,7 +22,7 @@
 
 @layer base {
   body {
-    font-family: "DM Sans", serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-optical-sizing: auto;
     background: #030014;
   }
@@ -70,6 +70,7 @@
 
     & ul li p {
       @apply fancy-text mt-[22px] text-nowrap;
+      -webkit-text-stroke: 5px rgba(0, 108, 137);
     }
 
     & ul li img {
@@ -143,7 +144,7 @@
 }
 
 @utility text-gradient {
-  @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
+  @apply bg-linear-to-r from-[#006c89] to-[#ffffff] bg-clip-text text-transparent;
 }
 
 @utility fancy-text {
